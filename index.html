@@ -2,284 +2,172 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siphokuhle Nyana</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siphokuhle Nyana - aspiring software engineer portfolio">
+  <title>Siphokuhle Nyana | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body
-  style="margin:0; height:100vh; background:url('abstract-dark-background-with-flowing-colouful-waves.png') no-repeat center center fixed; background-size:cover;">
-  <header>
-    <div class="logo"><img src="https://siphokuhlenyana.github.io/ImagesPortfolio/C-removebg-preview.png" width="200px">
-    </div>
-
-    <nav id="navbar">
-      <div class="sidebar" id="sidebar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <!-- <li><a href="#reviews">Reviews</a></li> -->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
+<body>
+  <div class="spotlight" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Siphokuhle Nyana home">
+      <span class="brand-mark">SN</span>
+      <span>Siphokuhle Nyana</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  <!-- Arrow Toggle Button -->
-  <button id="scrollToggle"
-    style="position:fixed; bottom:20px; right:20px; background:#00ffff; border:none; border-radius:50%; width:50px; height:50px; font-size:24px; cursor:pointer;">
-    ↓ </button>
-  <main class="hero">
-    <h1 class="typewriter">I'm Siphokuhle Nyana</h1>
-    <h2>Aspiring Software Engineer</h2>
-    <img class="hero-img" src="https://siphokuhlenyana.github.io/ImagesPortfolio/siphokuhle-removebg-preview.png">
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for new opportunities</p>
+        <h1>Building useful things<br><em>with intention.</em></h1>
+        <p class="hero-intro">I'm Siphokuhle Nyana, an aspiring software engineer focused on full-stack development, thoughtful interfaces, and solving complex problems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="text-link" href="#contact">Let's connect <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal reveal-delay-1">
+        <div class="portrait-ring"></div>
+        <img src="https://siphokuhlemilliorangela.github.io/images/Sipho.png" alt="Portrait of Siphokuhle Nyana">
+        <div class="portrait-tag">Software<br>Engineer<span>_</span></div>
+      </div>
+      <div class="hero-note reveal reveal-delay-2">
+        <span class="note-number">01</span>
+        <p>Curious by default.<br>Relentless about growth.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell about-section reveal">
+      <div class="section-label"><span>01</span><span>About me</span></div>
+      <div class="about-grid">
+        <h2>Turning curiosity<br>into <em>capability.</em></h2>
+        <div class="about-copy">
+          <p>Hi, I'm <strong>Siphokuhle Millior Angela Nyana</strong>, a passionate Software Engineer with a strong focus on full-stack development. I love tackling complex problems and finding innovative solutions that make a real impact, and I specialize in building scalable web applications.</p>
+          <p>I'm always pushing myself to improve and grow. My goals are to keep upskilling, explore new platforms, and bring creativity, work ethic, and attention to detail to a talented team.</p>
+          <a class="button button-outline" href="https://siphokuhlenyana.github.io/newimages/Beige%20&%20Black%20Minimalist%20Business%20Manager%20Professional%20Resume.pdf" target="_blank" rel="noopener">Download resume <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell skills-section reveal">
+      <div class="section-label"><span>02</span><span>What I work with</span></div>
+      <div class="section-heading"><h2>Skills that move<br><em>ideas forward.</em></h2><p>Technical fluency backed by collaboration, creativity, and a willingness to learn.</p></div>
+      <div class="skills-bento">
+        <article class="skill-panel skill-panel-main">
+          <div class="panel-top"><span class="panel-kicker">Technical skills</span><span class="panel-icon">⌘</span></div>
+          <div class="skill-list">
+                    <div class="skill-row"><div><span>Java</span><span class="skill-value">75%</span></div><div class="progress"><span style="--progress: 75%"></span></div></div>
+            <div class="skill-row"><div><span>JavaScript</span><span class="skill-value">80%</span></div><div class="progress"><span style="--progress: 80%"></span></div></div>
+            <div class="skill-row"><div><span>HTML / CSS</span><span class="skill-value">90%</span></div><div class="progress"><span style="--progress: 90%"></span></div></div>
+            <div class="skill-row"><div><span>Vue JS</span><span class="skill-value">72%</span></div><div class="progress"><span style="--progress: 72%"></span></div></div>
+            <div class="skill-row"><div><span>Machine Learning & AI</span><span class="skill-value">85%</span></div><div class="progress"><span style="--progress: 85%"></span></div></div>
+            <div class="skill-row"><div><span>Git</span><span class="skill-value">75%</span></div><div class="progress"><span style="--progress: 75%"></span></div></div>
+            <div class="skill-row"><div><span>React JS</span><span class="skill-value">60%</span></div><div class="progress"><span style="--progress: 60%"></span></div></div>
+            <div class="skill-row"><div><span>Node JS</span><span class="skill-value">75%</span></div><div class="progress"><span style="--progress: 75%"></span></div></div>
+            <div class="skill-row"><div><span>Python</span><span class="skill-value">70%</span></div><div class="progress"><span style="--progress: 70%"></span></div></div>
+            <div class="skill-row"><div><span>Bootstrap</span><span class="skill-value">78%</span></div><div class="progress"><span style="--progress: 78%"></span></div></div>
+           <div class="skill-row"><div><span>MySQL</span><span class="skill-value">80%</span></div><div class="progress"><span style="--progress: 80%"></span></div></div>
+        </div>
+        </article>
+        <article class="skill-panel tools-panel"><span class="panel-kicker">Tools & strengths</span><div class="tool-cloud"><span>Collaboration</span><span>Creativity</span><span>Communication</span><span>Critical thinking</span><span>Observation</span><span>Configuration</span><span>Innovation</span><span>Engagement</span><span>Project Management</span><span>Jira</span><span>Trello</span><span>GitHub Copilot</span><span>Google Workspace</span></div></article>
+      </div>
+    </section>
+
+    <section id="education" class="section-shell education-section reveal">
+      <div class="section-label"><span>03</span><span>Learning path</span></div>
+      <div class="education-list">
+        <article class="timeline-item"><span class="timeline-year">IN PROGRESS</span><div><h2>Associate AI Engineer for Developers</h2><p class="muted">DataCamp · Self-study</p></div><span class="timeline-arrow">↗</span></article>
+        <article class="timeline-item"><span class="timeline-year">NOV 2026</span><div><h2>Diploma in Information Communication Technology: Applications Development</h2><p class="muted">Cape Peninsula University of Technology (CPUT)</p><p>Expected graduation: November 2026.</p></div><span class="timeline-arrow">↗</span></article>
+        <article class="timeline-item"><span class="timeline-year">2018</span><div><h2>Higher Certificate in Information Communication Technology</h2><p class="muted">Cape Peninsula University of Technology (CPUT)</p><p>Graduated in 2018.</p></div><span class="timeline-arrow">↗</span></article>
+        <article class="timeline-item"><span class="timeline-year">2017</span><div><h2>Matric</h2><p class="muted">Zisukhanyo Senior Secondary School</p><p>Graduated in 2017.</p></div><span class="timeline-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell projects-section">
+      <div class="section-label reveal"><span>04</span><span>Selected work</span></div>
+      <div class="section-heading reveal"><h2>Projects with<br><em>purpose.</em></h2><p>Small experiments and collaborative builds that turn a brief into something people can use.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-large reveal" data-project="uiux"><div class="project-image"><img src="https://siphokuhlenyana.github.io/newimages/Screenshot%202025-08-15%20011411.png" alt="UI/UX and Scrum project preview"><span class="project-number">01</span></div><div class="project-card-body"><div><p class="card-type">Collaboration / Agile</p><h3>UI/UX & Scrum</h3></div><button class="project-open" type="button" aria-label="View UI/UX and Scrum details">↗</button></div></article>
+        <article class="project-card reveal reveal-delay-1" data-project="vue"><div class="project-image"><img src="https://siphokuhlenyana.github.io/newimages/Screenshot%202025-08-15%20010247.png" alt="Vue Portfolio project preview"><span class="project-number">02</span></div><div class="project-card-body"><div><p class="card-type">Frontend / Vue JS</p><h3>Vue-Portfolio</h3></div><button class="project-open" type="button" aria-label="View Vue Portfolio details">↗</button></div></article>
+        <article class="project-card reveal reveal-delay-1" data-project="react"><div class="project-image"><img src="https://siphokuhlemilliorangela.github.io/images/Screenshot%202026-09-04%20164909.png" alt="CampusMate"><span class="project-number">03</span></div><div class="project-card-body"><div><p class="card-type">React / Firebase</p><h3>CampusMate</h3></div><button class="project-open" type="button" aria-label="View Campus mate details">↗</button></div></article>
+        <article class="project-card reveal reveal-delay-2" data-project="swegga"><div class="project-image"><img src="https://siphokuhlenyana.github.io/newimages//Screenshot 2025-08-15 013131.png" alt="Swegga project preview"><span class="project-number">04</span></div><div class="project-card-body"><div><p class="card-type">JavaScript / HTML</p><h3>Swegga</h3></div><button class="project-open" type="button" aria-label="View Swegga details">↗</button></div></article>
+        <article class="project-card reveal" data-project="novels"><div class="project-image"><img src="https://siphokuhlenyana.github.io/newimages/Screenshot 2025-08-15 013329.png" alt="Light Novels project preview"><span class="project-number">05</span></div><div class="project-card-body"><div><p class="card-type">E-commerce / Backend</p><h3>Light Novels</h3></div><button class="project-open" type="button" aria-label="View Light Novels details">↗</button></div></article>
+        <article class="project-card project-wide reveal reveal-delay-1" data-project="weather"><div class="project-image"><img src="https://siphokuhlenyana.github.io/newimages/Screenshot 2025-08-15 024606.png" alt="WeatherWise App project preview"><span class="project-number">06</span></div><div class="project-card-body"><div><p class="card-type">Python / Flask</p><h3>WeatherWise App</h3></div><button class="project-open" type="button" aria-label="View WeatherWise App details">↗</button></div></article>
+        <article class="project-card project-wide reveal" data-project="order-apps"><div class="project-image project-placeholder order-placeholder"><img src="https://siphokuhlemilliorangela.github.io/images/OrderApp.jpg" alt="Orders App"/><span class="project-number">07</span></div><div class="project-card-body"><div><p class="card-type">Java / Spring Boot</p><h3>Order Apps</h3></div><button class="project-open" type="button" aria-label="View Order Apps details">↗</button></div></article>
+        <article class="project-card project-large reveal reveal-delay-1" data-project="mimo-hub"><div class="project-image project-placeholder mimo-placeholder"><img src="https://siphokuhlemilliorangela.github.io/images/Screenshot%202026-09-04%20161452.png" alt="Mimo Hub"/><span class="project-number">08</span></div><div class="project-card-body"><div><p class="card-type">TypeScript / AI</p><h3>MiMo Hub</h3></div><button class="project-open" type="button" aria-label="View MiMo Hub details">↗</button></div></article>
+      </div>
+    </section>
+
+    <section class="section-shell testimonials-section reveal">
+      <div class="section-label"><span>05</span><span>Kind words</span></div>
+      <div class="quote-grid"><blockquote><p>“Siphokuhle sets the atmosphere. Teaming up with her would definitely yield a great output.”</p><cite>Sihlandlo Makhumsha <span>Classmate</span></cite></blockquote><blockquote><p>“Their intellectual curiosity, creativity, and passion for learning are truly remarkable.”</p><cite>Olwethu Malumla <span>Classmate</span></cite></blockquote></div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section reveal">
+      <div class="contact-heading"><div class="section-label"><span>06</span><span>Start a conversation</span></div><h2>Have a good idea?<br><em>Let's make it real.</em></h2><p>I'm excited about the prospect of working with a talented team to drive results and make a meaningful impact.</p></div>
+      <div class="contact-grid"><form class="contact-form" action="https://formspree.io/f/xkgzeqyl" method="POST"><label for="name">Full name</label><input id="name" name="name" type="text" required><label for="email">Email address</label><input id="email" name="email" type="email" required><label for="message">Your message</label><textarea id="message" name="message" rows="4" required></textarea><button class="button button-primary" type="submit">Send message <span>↗</span></button></form><div class="contact-details"><p class="panel-kicker">Other ways to reach me</p><a href="mailto:siphokuhlenyana@gmail.com">siphokuhlenyana@gmail.com</a><a href="tel:0832432798">083 243 2798</a><div class="social-links"><a href="https://github.com/siphokuhlenyana" target="_blank" rel="noopener">GitHub ↗</a><a href="#contact">LinkedIn ↗</a></div></div></div>
+    </section>
   </main>
 
-  <main class="about-section" id="about">
-    <h1>ABOUT</h1>
-    <p>
-      Hi, I'm <strong>Siphokuhle Millior Angela Nyana</strong>, a passionate Software Engineer with a strong focus on
-      full-stack development. I love tackling complex problems and finding innovative solutions that make a real impact,
-      and I specialize in building scalable web applications. I consider myself an individual who's always pushing
-      boundaries to improve and grow.What motivates me is the ability to be creative and think outside the box. I enjoy
-      brainstorming innovative ideas and finding new ways to engage . I'm excited about the prospect of working with a
-      talented team to drive results and make a meaningful impact.<br>
+  <footer class="site-footer"><span>© <span id="year"></span> Siphokuhle Nyana</span><span>Designed & built with intent.</span><a href="#top">Back to top ↑</a></footer>
 
-      In terms of my goals, I'm looking to continue growing and upskilling . I'm particularly interested in exploring
-      new channels and platforms to reach and stay ahead of the curve. I believe that my passion for Information
-      Technology , combined with my strong work ethic and attention to detail, make me a valuable asset to any team.
-    </p>
-    <a onclick="window.location.href='https://siphokuhlenyana.github.io/newimages/Beige%20&%20Black%20Minimalist%20Business%20Manager%20Professional%20Resume.pdf'"
-      class="btn" download=""> Download Resume</a>
-  </main>
-
-  <section id="skills" class="skills-section">
-    <h1>SKILLS</h1>
-
-    <div class="skills-container">
-      <div class="skills-category">
-        <h2>Technical Skills</h2>
-        <div class="skills-icons">
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/bootstrap.png" alt="Bootstrap" />
-            <h3>Bootstrap</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/document (1).png" alt="Vue" />
-            <h3>Vue JS</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/html-5.png" alt="HTML" />
-            <h3>HTML</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/java-script.png" alt="JavaScript" />
-            <h3>JavaScript</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/java.png" alt="Java" />
-            <h3>Java</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/text.png" alt="CSS" />
-            <h3>CSS</h3>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <h2>Soft Skills</h2>
-        <div class="skills-icons">
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/collaboration.png" alt="Teamwork" />
-            <h3>Collaboration</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/creativity.png" alt="Creativity" />
-            <h3>Creativity</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/observation.png" alt="Observant" />
-            <h3>Observation</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/pencil.png" alt="Configure" />
-            <h3>Configuration</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/speech-bubble.png" alt="Communication" />
-            <h3>Communication</h3>
-          </div>
-
-          <div class="skill-item">
-            <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/thinking.png" alt="Critical-thinking" />
-            <h3>Critical Thinking</h3>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="projects">
-    <h1>PROJECTS</h1>
-
-    <div class="container">
-      <div class="project-header">
-        <img src="https://siphokuhlenyana.github.io/newimages/Screenshot%202025-08-15%20011411.png" alt="Anon logo">
-        <h2>UI/UX & SCRUM</h2>
-      </div>
-      <p>As the Scrum Master, I facilitated Scrum sprints, ensuring that the team was engaged and focused. I applied
-        Agile principles, to adopt best practices and improve their workflow and maintained open communication with
-        stakeholders .</p>
-      <div class="buttons">
-        <button href="https://www.canva.com/design/DAGUYdMXv1E/pj9WjunZlwhCyU8moAKZuw/edit">Visit</button>
-        <button href="https://github.com/siphokuhlenyana/projectsimg">Github</button>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="project-header">
-        <img src="https://siphokuhlenyana.github.io/newimages/Screenshot%202025-08-15%20010247.png" alt="Anon logo">
-        <h2> Vue-Portfolio</h2>
-      </div>
-      <p>This project was a challenge as I was transitioning from vanilla JavaScript and using frameworks instead ,
-        showcasing my knowledge around using the store , API call and maintaining the workflow from back to fornt end .
-      </p>
-      <div class="buttons">
-        <button onclick="window.location.href='https://vue-portfolio-siphokuhle.firebaseapp.com'">Visit</button>
-        <button onclick="window.location.href='https://github.com/siphokuhlenyana/vue-portfolio.git'">Github</button>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="project-header">
-        <img src="https://siphokuhlenyana.github.io/newimages//Screenshot 2025-08-15 013131.png" alt="Anon logo">
-        <h2>Swegga</h2>
-      </div>
-      <p>In this project I used Javascript and HTML to clone a website that is already working and existing .</p>
-      <div class="buttons">
-        <button onclick="window.location.href='https://fantastic-mochi-cf5791.netlify.app/'">Visit</button>
-        <button onclick="window.location.href='https://github.com/siphokuhlenyana/SweggaProject'">Github</button>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="project-header">
-        <img src="https://siphokuhlenyana.github.io/newimages/Screenshot 2025-08-15 013329.png" alt="Anon logo">
-        <h2>Light Novels</h2>
-      </div>
-      <p>This is an anime book e-commerce website that built my collaboration skills.I worked as a backend developer.
-      </p>
-      <div class="buttons">
-        <button onclick="window.location.href='https://light-novels-2a9a7.web.app/'">Visit</button>
-        <button onclick="window.location.href='https://github.com/khanyapupuma/Light-Novels'">Github</button>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="project-header">
-        <img src="https://siphokuhlenyana.github.io/newimages/Screenshot 2025-08-15 024606.png" alt="Anon logo">
-        <h2>WeatherWise App</h2>
-      </div>
-      <p>Python & Flask developed app to access weather conditions on a geo-location .</p>
-      <div class="buttons">
-        <button onclick="window.location.href='https://weather-wise-sftw-eng.vercel.app/'">Visit</button>
-        <button onclick="window.location.href='https://github.com/siphokuhlenyana/weather_app.git'">Github</button>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="reviews" id="reviews">
-     <h1>REVIEWS</h1>
-  <div class="container-tes">
-   
-
-    <div class="testimonial">
-      <img src="https://yonelamangele.github.io/Images/20240422_122539.jpg" alt="Yonela">
-      <div class="text">
-        <h2>Yonela Mangele</h2>
-        <p>"Siphokuhle is the definition of hard work and dedication and this is proven by what she does as soon as she gets to class very early in the morning, which is opening her laptop and be busy with her work.<br> Her sense of humour creates a healthy and fun environment to work in and what I find most inspiring about her is her ability to lead and come up with creative solutions whenever she is in a group.<br> I wholeheartedly recommend Siphokuhle for any serious or challenging projects because the expected result of her work is excellence and the deadline of the project being met."</p>
-      </div>
-    </div>
-<hr>
-    <div class="testimonial">
-      <img src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/o2.jpg?raw=true" alt="Olwethu">
-      <div class="text">
-        <h2>Olwethu Malumla</h2>
-        <p>"I had the pleasure of sitting alongside Siphokuhle Nyana in our Class during the programming course at LCA,and I must say, they are an exceptional individual. Their dedication, passion, and work ethic are truly inspiring. Siphokuhle has a unique ability to balance academic rigor with kindness, empathy, and a willingness to help others.<br> Their positive energy is contagious, and they have a way of making everyone feel included and valued.I have had the privilege of being a classmate of Siphokuhle, and I can confidently say that they are one of the most exceptional individuals I have ever met.<br> Their intellectual curiosity, creativity, and passion for learning are truly remarkable."</p>
-      </div>
-    </div>
-<hr>
-    <div class="testimonial">
-      <img src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/unnamed.jpg?raw=true" alt="Sihlandlo">
-      <div class="text">
-        <h2>Sihlandlo Makhumsha</h2>
-        <p>"Well, there is a lot that can be said about this soul. Cutting a lot short. Siphokuhle, when it comes to linking up with people for a project or assignment, she sets the atmosphere, and she is a very versatile classmate. Teaming up with her would definitely yield a great output. Negative energy, out of the window ."</p>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-  <div class="contact" id="contact">
-    <h1>Contact Me</h1>
-    <div class="contact-container">
-
-      <form class="contact-form" action="https://formspree.io/f/xkgzeqyl" method="POST">
-
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Write to Me</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <div class="form-buttons">
-          <button type="submit">Send</button>
-          <button type="reset">Clear</button>
-        </div>
-      </form>
-
-      <div class="contact-info">
-        <h3>Other Ways to Reach Me</h3>
-        <p><strong>Phone:</strong> 083 243 2798</p>
-        <p><strong>Email:</strong> siphokuhlenyana@gmail.com</p>
-      </div>
-    </div>
-  </div>
-  <!-- Social Media Footer -->
-  <footer class="social-footer">
-    <a href="#"><img src="https://siphokuhlenyana.github.io/newimages/linkedin (1).png" alt="LinkedIn"></a>
-    <a href="#"><img src="https://siphokuhlenyana.github.io/newimages/github.png" alt="GitHub"></a>
-    <p class="copyright"> Siphokuhle Nyana © . <span id="year"></span></p>
-  </footer>
+  <dialog id="project-modal" class="project-modal"><button class="modal-close" type="button" aria-label="Close project details">×</button><p class="card-type" id="modal-type"></p><h2 id="modal-title"></h2><p id="modal-description"></p><div class="modal-actions"><a id="modal-visit" class="button button-primary" target="_blank" rel="noopener noreferrer">Visit project ↗</a><a id="modal-code" class="button button-outline" target="_blank" rel="noopener noreferrer">View code</a></div></dialog>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    let scrollingDown = true; const button = document.getElementById("scrollToggle"); button.addEventListener("click", () => { if (scrollingDown) { window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); button.textContent = "↑"; } else { window.scrollTo({ top: 0, behavior: "smooth" }); button.textContent = "↓"; } scrollingDown = !scrollingDown; });
-
+    const projectData = {
+      uiux: { type: 'Collaboration / Agile', title: 'UI/UX & Scrum', description: 'As Scrum Master, Siphokuhle facilitated sprints, kept the team focused, applied Agile principles, and maintained open communication with stakeholders.', visit: 'https://www.canva.com/design/DAGUYdMXv1E/pj9WjunZlwhCyU8moAKZuw/edit', code: 'https://github.com/siphokuhlenyana/projectsimg' },
+      vue: { type: 'Frontend / Vue JS', title: 'Vue-Portfolio', description: 'A transition from vanilla JavaScript to frameworks, showcasing store usage, API calls, and a connected front-to-back workflow.', visit: 'https://vue-portfolio-siphokuhle.firebaseapp.com', code: 'https://github.com/siphokuhlenyana/vue-portfolio.git' },
+      react: { type: 'React / Firebase', title: 'CampusMate', description: 'A campus-focused application built with React and Firebase.', visit: 'https://campusmate-app.netlify.app/', code: 'https://github.com/CampusMate1/CampusMate.git' },
+      swegga: { type: 'JavaScript / HTML', title: 'Swegga', description: 'A JavaScript and HTML project recreating an existing website while building practical frontend skills.', visit: 'https://fantastic-mochi-cf5791.netlify.app/', code: 'https://github.com/siphokuhlenyana/SweggaProject' },
+      novels: { type: 'E-commerce / Backend', title: 'Light Novels', description: 'An anime book e-commerce website that strengthened collaboration skills through backend development.', visit: 'https://light-novels-2a9a7.web.app/', code: 'https://github.com/khanyapupuma/Light-Novels' },
+      weather: { type: 'Python / Flask', title: 'WeatherWise App', description: 'A Python and Flask app for accessing weather conditions through geolocation.', visit: 'https://weather-wise-sftw-eng.vercel.app/', code: 'https://github.com/siphokuhlenyana/weather_app.git' },
+      'order-apps': { type: 'Java / Spring Boot', title: 'Order Apps', description: 'A Domain-Driven Design (DDD) and Test-Driven Development (TDD) based application for managing orders.', visit: 'https://github.com/SiphokuhleMilliorAngela/OrderApps.git', code: 'https://github.com/SiphokuhleMilliorAngela/OrderApps.git' },
+      'mimo-hub': { type: 'TypeScript / CSS / JavaScript', title: 'MiMo Hub', description: 'An AI-powered productivity dashboard unifying workplace tools into one intelligent workspace for email generation, meeting summaries, task planning, research, and interactive chat.', visit: 'https://github.com/SiphokuhleMilliorAngela/mimo-hub', code: 'https://github.com/SiphokuhleMilliorAngela/mimo-hub' }
+    };
+    const modal = document.querySelector('#project-modal');
+    document.querySelectorAll('.project-card').forEach(card => card.querySelector('.project-open').addEventListener('click', () => {
+      const project = projectData[card.dataset.project];
+      document.querySelector('#modal-type').textContent = project.type;
+      document.querySelector('#modal-title').textContent = project.title;
+      document.querySelector('#modal-description').textContent = project.description;
+      document.querySelector('#modal-visit').href = project.visit;
+      document.querySelector('#modal-code').href = project.code;
+      modal.showModal();
+    }));
+    document.querySelector('.modal-close').addEventListener('click', () => modal.close());
+    modal.addEventListener('click', event => { if (event.target === modal) modal.close(); });
+    document.querySelector('.menu-toggle').addEventListener('click', event => {
+      const button = event.currentTarget;
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      document.querySelector('#site-nav').classList.toggle('is-open', !open);
+    });
+    document.querySelectorAll('.site-nav a').forEach(link => link.addEventListener('click', () => {
+      document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
+      document.querySelector('#site-nav').classList.remove('is-open');
+    }));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    const spotlight = document.querySelector('.spotlight');
+    window.addEventListener('pointermove', event => { spotlight.style.setProperty('--x', `${event.clientX}px`); spotlight.style.setProperty('--y', `${event.clientY}px`); }, { passive: true });
   </script>
-
-
 </body>
 
 </html>
